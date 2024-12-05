@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>attribute</title>
+    <style>
+        a[target]{
+            color: aqua;
+        }
+        a[target="_self"]{
+            color: red;
+        }
+        p[title$="belajar"]{
+            color: yellowgreen;
+        /*
+            ^ awalannya aja harus sama
+            $ akhirannya harus sama
+            | memiliki value yang sama dan tanda -
+            * semua yang mengandung value yang sama
+            tidak wajib menggunakan tag nya bisa langsung atributenya saja
+        */
+        }
+    </style>
+</head>
+<body>
+    <a href="" target="_blank">Contoh 1</a>
+    <a href="">Contoh 2</a>
+    <a href="" target="_self">Contoh 3</a>
+    <a href="">Contoh 4</a>
+
+    <p title="belajar" >belajar</p>
+    <p title="belajarcss">belajar css</p>
+    <p title="css belajar">css belajar</p>
+    <p title="belajar-css">belajar-css</p>
+</body>
+</html>
