@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Login</title>
+    <style>
+        *{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        input, label, button {
+            font-size: 5vh;
+        }
+        body {
+            background-color: lightcyan;
+            display: flex;
+            justify-content: center; /* Memusatkan secara horizontal */
+            align-items: center; /* Memusatkan secara vertikal */
+            height: 100vh; /* Mengatur tinggi body menjadi 100% dari viewport */
+            margin: 0; /* Menghapus margin default */
+        }
+        form{
+            box-shadow: 3px 4px 5px black;
+            display: inline-block;
+            padding: 20px;
+            border-radius: 10px;
+            background: linear-gradient(0deg, rgba(34,195,158,1) 0%, rgba(202,45,253,1) 100%);
+            
+        }
+        input{
+            border: 2px solid darkgreen;
+            border-radius: 15px;
+            margin:3px;
+            border-color: darkgreen;
+        }
+        input:focus{
+            border-color: green !important ;
+            color:darkgreen;
+            background-color: lightgreen;
+        }
+        label{
+            border-radius: 4px;
+            padding: 2px;
+            color: lemonchiffon;
+            text-shadow: 0px 0px 2px black;
+        }
+        button{
+            text-shadow: 0px 1px 5px black;
+            padding: 2vh;
+            border:none;
+            border-radius: 2px;
+            color: aliceblue;
+            background-color: red;
+            box-shadow: 0px 0px 4px black;
+            margin-top: 10px;
+            display: block; /* Tambahkan ini */
+            margin-left: auto; /* Tambahkan ini */
+            margin-right: auto; 
+        }
+        button:hover{
+            background-color: aliceblue;
+            color: red;
+            /* outline: solid 2px red; */
+        }
+    </style>
+</head>
+<body>
+    <form action="" method="post">
+        <label for="nama">User Name: <br></label>
+            <input type="text" name="nama" id="nama" required><br>
+        <label for="password">Password :</label> <br>
+            <input type="password" name="password" id="password" required><br>
+        <button type="submit">Login</button>
+    </form>
+</body>
+</html>
